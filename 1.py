@@ -7,3 +7,4 @@ while True:
 		#print "LEAVE IT AS IS"
 		time.sleep(0.4)
 		os.system('clear')
+		print "OK"
