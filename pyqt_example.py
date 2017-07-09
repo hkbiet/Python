@@ -22,7 +22,7 @@ class MyForm(QWidget):
 		super(MyForm, self).__init__()
 		
 		
-		self.setWindowTitle("My Form")
+		self.setWindowTitle("My Basic Form")
 		self.buttonLabel = QLabel("Form Yet not submitted")
 		self.lcd = QLCDNumber()
 		self.slider = QSlider()
