@@ -1,11 +1,14 @@
 """
- We are in need of a configuration file which happens to have data in the form of key vaue pairs inside it , like 'Email' = 'hkbiet@gmail.com'.
- We've got to be able to write keys and respective values in the config file and also be able to retrieve the values of key asked for .
+ We are in need of a configuration file which happens to have data in the form of key vaue pairs inside it , 
+ like 'Email' = 'hkbiet@gmail.com'.
+ We've got to be able to write keys and respective values in the config file and also be able to retrieve 
+ the values of key asked for .
 
- Hence , The best way to go around is to create a custom dictionary , which writes key value pairs to the configuration file and retrieves data as va- -lue for key asked for
+ Hence , The best way to go around is to create a custom dictionary , which writes key value pairs to the 
+ configuration file and retrieves data as va- -lue for key asked for
 
-  
-                                                         : github.com/hkbiet :
+ (C) HEMANT KUMAR 
+                                                        PROJECT REPO : github.com/hkbiet
 
 
 """
@@ -20,7 +23,6 @@ class CustomException(Exception):
 		self.keys = dict_instance.keys()
 
 	def __str__(self):
-		#return self.key+" is NOT a legal key "+" please choose one amongs these "+",".join(self.keys())
 		return "\n\t '{0}' is NOT a valid key in the file ! please choose one of the below keys \n\t {1}".format(self.key,", ".join(self.keys))
 		
 		
