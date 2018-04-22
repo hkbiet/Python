@@ -7,7 +7,7 @@
  Hence , The best way to go around is to create a custom dictionary , which writes key value pairs to the 
  configuration file and retrieves data as va- -lue for key asked for
 
- (C) HEMANT KUMAR 
+ (*) HEMANT KUMAR 
                                                         PROJECT REPO : github.com/hkbiet
 
 
