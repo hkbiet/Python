@@ -24,6 +24,16 @@ class Stack(object):
 		print(self.items)
 
 
+def is_match(top_element, character):
+	if top_element == '(' and character == ')':
+		return True
+	elif top_element == '{' and character == '}':
+		return True
+	elif top_element == '[' and character == ']':
+		return True
+	else:
+		return False
+
 def checkBalancedParantheses(input_string):
 	stack = Stack()
 	parentheses_balanced = False
@@ -40,13 +50,10 @@ def checkBalancedParantheses(input_string):
 				return parentheses_balanced
 
 			top_element = stack.pop()
-			if top_element == '(' and character == ')':
-				pass
-			elif top_element == '{' and character == '}':
-				pass
-			elif top_element == '[' and character == ']':
-				pass
-			else:
+
+			did_it_match = is_match(top_element, character)
+
+			if(not did_it_match):
 				parentheses_balanced = False
 				return parentheses_balanced
 
@@ -66,3 +73,5 @@ if __name__ == "__main__":
 		print("PARENTHESES ARE BALANCED ")
 	else:
 		print("PARENTHESES ARE NOT BALANCED ")
+
+			
